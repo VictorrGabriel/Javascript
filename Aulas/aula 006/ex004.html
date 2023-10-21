@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 150px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        p.script{
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <P>Quarta aula!</P>
+    <p>
+    </p>
+</body>
+<script>
+    var nome = prompt('qual o seu nome')
+    document.write(`<p class="script"> Olá, ${nome}! Seu nome tem ${nome.length} letras</p> `)
+    document.write(`<p class="script">O seu nome em maiúsculo fica assim ${nome.toUpperCase()} </p>`)
+    document.write(`<p class="script">O seu nome em minúsculo fica assim ${nome.toLowerCase()} </p>`)
+    var salario = 1545.50
+    document.write(toLocaleString('pt-BR', {style: 'currency', currency: 'BRL' }))
+    document.body.style.background = 'lightgreen'
+
+</script>
+</html>

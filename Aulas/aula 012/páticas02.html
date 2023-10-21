@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacolão</title>
+    <style>
+        body{
+            background-color: rgba(21, 210, 21, 0.642);
+            font: normal 1em arial, sans-serif;
+        }
+        main{
+            background-color: aliceblue;
+            max-width: 800px;
+            height: auto;
+            margin: auto;
+            border-radius: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Venda de Frutas</h1>
+        <p>qual fruta você vai querer?</p>
+
+        <input type="text" name="txtfrut" id="fruta">
+
+        <input type="button" value="Verificar" onclick="verificar()">
+
+        <div id="res">
+        
+        </div>
+    </main>
+    <script>
+        function verificar() {
+            var fruta = document.getElementById
+            ('fruta').value
+            var res = document.querySelector ('div#res')
+            switch(fruta){
+                case 'Melancia':
+                    res.innerHTML = '<p>Aqui está, são 3 reais o quilo!</p>'
+                break
+                case 'Maçã':
+                    res.innerHTML = '<p>Não vendemos maçã!</p>'
+                break
+                case 'Kiwi':
+                    res.innerHTML = '<p>Estamos com escassez de Kiwi!</p>'
+                break
+                case 'Banana!':
+                    res.innerHTML = '<p>A banana está 2 reias o quilo!</p>'
+                break
+                default:
+                    res.innerHTML = '<p>[Erro] Esta fruta é inválida!</p>'
+                break
+
+            } 
+        }
+    </script>
+</body>
+</html>

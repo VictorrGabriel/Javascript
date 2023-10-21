@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        div#area {
+            font: normal 20pt arial, sans-serif;
+            background-color: rgb(24, 148, 45);
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+        p{
+            font: normal 1.3em arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onscroll="rolar()" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">interaja...</div>
+    <p name="p1" onmousemove="passar()">Como é bom aprender a programar!!</p>
+    <script>
+        var area = document.getElementById('area')
+        var body = document.getElementsByTagName('body')
+    
+        /*area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)*/
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'rgb(24, 148, 45)'
+        }
+        function rolar(){
+            area.style.background = 'transparent'
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governo</title>
+</head>
+<body>
+    <h1>Nacionalidae</h1>
+    <span>De ondê você é? </span><input type="text" name="txtnac" id="txtnac"><span>S</span>
+    <input type="button" value="Verificar" onclick="mostrar()">
+    <div id="res">
+
+    </div>
+    <script>
+      function mostrar() {
+        var país = window.document.querySelector ('input#txtnac').value
+        var res = document.getElementById ('res')
+        res.innerHTML = `Vivendo em ${país}`
+        if (país == 'Brasil'){
+            res.innerHTML += `Você é Brasileiro`
+        }else{
+            res.innerHTML += `Você é Estrangeiro`
+        }
+      }
+    </script>
+
+</body>
+</html>

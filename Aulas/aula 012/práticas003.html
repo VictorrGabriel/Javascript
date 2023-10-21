@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revendedora</title>
+    <style>
+        body{
+            background-color: rgba(59, 59, 233, 0.696);
+            font:normal 1em arial, sans-serif;
+        }
+        main{
+            background-color: aliceblue;
+            max-width: 800px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Venda de Carros</h1>
+
+        <p>Qual modelo de carro você deseja?</p>
+
+        <input type="text" name="txtcar" id="txtcar">
+
+        <input type="button" value="Verificar" onclick="Verificar()">
+
+        <div id="res"></div>
+    </main>
+    <script>
+        function Verificar() {
+            var  carro = document.querySelector ('input#txtcar').value
+            var res = document.querySelector ('div#res')
+            switch (carro){
+                case 'Hatch':
+                    res.innerHTML = '<p>Compra efetuado com sucesso!</p>'
+                break
+                case 'Sedan':
+                    res.innerHTML = '<p>Tem certeza que não prefere este modelo?</p>' 
+                break
+                case 'Motocicletas': 
+                    res.innerHTML = '<p>Tem certeza que não prefere este modelo?</p>'
+                break
+                case 'Camionetes':
+                    res.innerHTML = '<p>Tem certeza que não prefere este modelo?</p>' 
+                default:
+                    res.innerHTML = '<p>Não trabalhamos com esse tipo de automóvel!</p>'
+                break
+            }
+        }
+    </script>
+</body>
+</html>
