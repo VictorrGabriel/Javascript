@@ -4,16 +4,21 @@ function Calcular() {
     var p = Number(document.querySelector ('input#txtpas').value)
     var res = document.querySelector ('div#res')
     res.innerHTML = ''
-    for (c ; c <= f ; c += p){
-        res.innerHTML += c + '  '
+    if(c < f){
+        // contagem crescente
+        for (c ; c <= f ; c += p){
+            res.innerHTML +=  ` &#x1F449 ` + c  
+            
+        }
+        
+    } else {
+        // contagem regressiva
+        for(c ; c >= f ; c -= p){
+            res.innerHTML +=  ` &#x1F449 ` + c
+        }
         
     }
+    res.innerHTML += ` &#x1F3C1 `
 
-}
 
-var d = 1
-var a = 2
-var b = 12
-for ( d ; d <= b ; d += a) {
-    console.log(d)
 }
