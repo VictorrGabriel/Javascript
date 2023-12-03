@@ -17,6 +17,11 @@ main {
     padding: 10px;
     border-radius: 15px;
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.411);
+    height: 150px;
+}
+
+.btn {
+    padding: 17px;
 }
 
 footer {

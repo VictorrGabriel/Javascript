@@ -1,7 +1,7 @@
 function identificar () {
-    var n1 = Number.parseInt(document.querySelector ('input#num1').value)
-    var n2 = Number.parseInt(document.querySelector ('input#num2').value)
-    var n3 = Number.parseInt(document.querySelector ('input#num3').value)
+    var n1 = Number.parseFloat(document.querySelector ('input#num1').value)
+    var n2 = Number.parseFloat(document.querySelector ('input#num2').value)
+    var n3 = Number.parseFloat(document.querySelector ('input#num3').value)
     var r = document.querySelector ('section#resposta')
      if (n1 < n3) {
         r.innerHTML = `O maior número é ${n3}` 

@@ -5,11 +5,11 @@ function trocar() {
     var n2 = Number(num2.value)
     var r = document.getElementById ('resultado')
     if (n1 == n1) {
-        alert (`Antes ${n1} e Depois ${n1 = n2}` )
+        alert (`O primeriro valor era ${n1} e agora é ${n1 = n2}` )
     }
     if (n2 == n2) {
         n1 = Number(num1.value)
-        alert (`Antes ${n2} e depois ${n2 = n1} `)
+        alert (`O primeriro valor era ${n2} e agora é ${n2 = n1} `)
     }
 
 }  
